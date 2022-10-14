@@ -9,14 +9,14 @@ namespace UnityEngine.Tilemaps
     /// </summary>
     [MovedFrom(true, "UnityEngine")]
     [Serializable]
-    [HelpURL("https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@latest/index.html?subfolder=/manual/RuleOverrideTile.html")]
+    [CreateAssetMenu(fileName = "New Advanced Rule Override Tile", menuName = "2D Extras/Tiles/Advanced Rule Override Tile", order = 359)]
     public class AdvancedRuleOverrideTile : RuleOverrideTile
     {
 
         /// <summary>
         /// Gets the overriding TilingRuleOutput of a given TilingRule. 
         /// </summary>
-        /// <param name="originalRule">The original TilingRule that is overridden</param>
+        /// <param name="original">The original TilingRule that is overridden</param>
         public RuleTile.TilingRuleOutput this[RuleTile.TilingRule originalRule]
         {
             get
@@ -46,17 +46,8 @@ namespace UnityEngine.Tilemaps
             }
         }
 
-        /// <summary>
-        /// The Default Sprite set when creating a new Rule override.
-        /// </summary>
         public Sprite m_DefaultSprite;
-        /// <summary>
-        /// The Default GameObject set when creating a new Rule override.
-        /// </summary>
         public GameObject m_DefaultGameObject;
-        /// <summary>
-        /// The Default Collider Type set when creating a new Rule override.
-        /// </summary>
         public Tile.ColliderType m_DefaultColliderType = Tile.ColliderType.Sprite;
 
         /// <summary>
@@ -82,7 +73,6 @@ namespace UnityEngine.Tilemaps
         /// Gets overrides for this
         /// </summary>
         /// <param name="overrides">A list of overrides to fill</param>
-        /// <param name="validCount">Returns the number of valid overrides for Rules</param>
         /// <exception cref="ArgumentNullException">The input overrides list is not valid</exception>
         public void GetOverrides(List<KeyValuePair<RuleTile.TilingRule, RuleTile.TilingRuleOutput>> overrides, ref int validCount)
         {
@@ -112,9 +102,6 @@ namespace UnityEngine.Tilemaps
             }
         }
 
-        /// <summary>
-        /// Updates the Rules with the Overrides set for this AdvancedRuleOverrideTile
-        /// </summary>
         public override void Override()
         {
             if (!m_Tile || !m_InstanceTile)

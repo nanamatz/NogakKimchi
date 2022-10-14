@@ -3,35 +3,18 @@ using UnityEngine.Tilemaps;
 
 namespace UnityEditor
 {
-    /// <summary>
-    /// The Editor for an IsometricRuleTile.
-    /// </summary>
     [CustomEditor(typeof(IsometricRuleTile), true)]
     [CanEditMultipleObjects]
     public class IsometricRuleTileEditor : RuleTileEditor
     {
-        /// <summary>
-        /// Gets the index for a Rule with the IsometricRuleTileEditor to display an arrow.
-        /// </summary>
-        /// <param name="position">The adjacent position of the arrow.</param>
-        /// <returns>Returns the index for a Rule with the IsometricRuleTileEditor to display an arrow</returns>
+
         private static readonly int[] s_Arrows = { 3, 0, 1, 6, -1, 2, 7, 8, 5 };
 
-        /// <summary>
-        /// Gets the index for a Rule with the HexagonalRuleTile to display an arrow.
-        /// </summary>
-        /// <param name="position">The adjacent position of the arrow.</param>
-        /// <returns>Returns the index for a Rule with the HexagonalRuleTile to display an arrow.</returns>
         public override int GetArrowIndex(Vector3Int position)
         {
             return s_Arrows[base.GetArrowIndex(position)];
         }
 
-        /// <summary>
-        /// Gets the GUI matrix size for a Rule of a IsometricRuleTile
-        /// </summary>
-        /// <param name="bounds">Cell bounds of the Rule.</param>
-        /// <returns>Returns the GUI matrix size for a Rule of a IsometricRuleTile.</returns>
         public override Vector2 GetMatrixSize(BoundsInt bounds)
         {
             float p = Mathf.Pow(2, 0.5f);
@@ -39,14 +22,7 @@ namespace UnityEditor
             return new Vector2(w, w);
         }
 
-        /// <summary>
-        /// Draws a Rule Matrix for the given Rule for a IsometricRuleTile.
-        /// </summary>
-        /// <param name="tile">Tile to draw rule for.</param>
-        /// <param name="rect">GUI Rect to draw rule at.</param>
-        /// <param name="bounds">Cell bounds of the Rule.</param>
-        /// <param name="tilingRule">Rule to draw Rule Matrix for.</param>
-        public override void RuleMatrixOnGUI(RuleTile tile, Rect rect, BoundsInt bounds, RuleTile.TilingRule tilingRule)
+        public override void RuleMatrixOnGUI(RuleTile ruleTile, Rect rect, BoundsInt bounds, RuleTile.TilingRule tilingRule)
         {
             Handles.color = EditorGUIUtility.isProSkin ? new Color(1f, 1f, 1f, 0.2f) : new Color(0f, 0f, 0f, 0.2f);
             float w = rect.width / bounds.size.x;
@@ -98,11 +74,6 @@ namespace UnityEditor
             }
         }
 
-        /// <summary>
-        /// Determines the current mouse position is within the given Rect.
-        /// </summary>
-        /// <param name="rect">Rect to test mouse position for.</param>
-        /// <returns>True if the current mouse position is within the given Rect. False otherwise.</returns>
         public override bool ContainsMousePosition(Rect rect)
         {
             var center = rect.center;
@@ -114,9 +85,6 @@ namespace UnityEditor
             return (xAbs / halfWidth + yAbs / halfHeight) <= 1;
         }
 
-        /// <summary>
-        /// Updates preview settings for the IsometricRuleTile.
-        /// </summary>
         public override void OnPreviewSettings()
         {
             base.OnPreviewSettings();
@@ -128,10 +96,7 @@ namespace UnityEditor
             }
         }
 
-        /// <summary>
-        /// Creates a Preview for the IsometricRuleTile.
-        /// </summary>
-        protected override void CreatePreview()
+        public override void CreatePreview()
         {
             base.CreatePreview();
 

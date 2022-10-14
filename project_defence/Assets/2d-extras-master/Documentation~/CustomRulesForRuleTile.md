@@ -2,13 +2,13 @@
 
 __Contribution by:__ [johnsoncodehk](https://github.com/johnsoncodehk)
 
-Use this template script to create new custom [Rule Tiles](RuleTile.md) with matching options that differ from the Rule Tile’s [default options](RuleTile.md#Usage) (namely **This** and **Not This**). This creates selectable options for each Rule in your custom __Rule Tile__.
+This template script is for creating new custom [Rule Tiles](RuleTile.md) with different matching options that differ from the [default options](RuleTile.md#Usage) of ‘Don't Care’, ‘This’ and ‘Not This’. Create clickable options for each Rule in your custom __Rule Tile__.
 
 ## Template features
 
-- Inheritable Rule Tile.
+- Inheritable RuleTile.
 - Customizable properties.
-- Expand or rewrite both neighbor Rules and the GUI display of the Rules.
+- Expand or rewrite both neighbor Rules and the GUI display.
 - Usable with by [RuleOverrideTile](RuleOverrideTile.md)
 - Create from a template script.
 - Neighbor Rules tooltips.

@@ -9,7 +9,7 @@ Thank you to all who have contributed to this repository!
 - [janissimsons](https://github.com/janissimsons)
 - [distantcam](https://github.com/distantcam)
 - [Pepperized](https://github.com/Pepperized)
-- MahdiMahzuni
+- [MahdiMahzuni](https://github.com/MahdiMahzuni)
 - [DreadBoy](https://github.com/DreadBoy)
 - [DoctorShinobi](https://github.com/DoctorShinobi)
 - [CraigGraff](https://github.com/CraigGraff)
@@ -23,7 +23,5 @@ Thank you to all who have contributed to this repository!
 - [trobol](https://github.com/trobol)
 - [HyagoOliveira](https://github.com/HyagoOliveira)
 - [RyotaMurohoshi](https://github.com/RyotaMurohoshi)
-- [ManickYoj](https://github.com/ManickYoj)
-- [n4n0lix](https://githubb.com/n4n0lix)
 
 If anybody has been missed, please do let us know!
