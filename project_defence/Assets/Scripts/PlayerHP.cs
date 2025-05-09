@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerHP : MonoBehaviour
     [SerializeField]
     private float   maxHP = 20;     // 최대 체력
     private float   currentHP;      // 현재 체력
+    [SerializeField]
+    private GameObject playerHPViewer;
 
     public  float   MaxHP => maxHP;
     public  float   CurrentHP => currentHP;
@@ -16,6 +19,12 @@ public class PlayerHP : MonoBehaviour
     private void Awake()
     {
         currentHP = maxHP;          // 현재 체력을 최대 체력과 같게 설정
+        playerHPViewer.GetComponent<PlayerHPViewer>().setUp(this);
+    }
+
+    public void HealHP(float heal)
+    {
+        currentHP += heal;
     }
 
     public void TakeDamage(float damage)
@@ -29,6 +38,7 @@ public class PlayerHP : MonoBehaviour
         // 체력이 0이 되면 게임오버
         if ( currentHP <= 0 )
         {
+            SceneManager.LoadScene("BadEnd");
         }
     }
 
@@ -55,9 +65,9 @@ public class PlayerHP : MonoBehaviour
 /*
  * File : PlayerHP.cs
  * Desc
- *	: 플레이어 캐릭터의 체력
+ *	:  플레이어 캐릭터의 체력
  *	
  * Functions
- *	: TakeDamage() - 체력 감소
- *	: HitAlphaAnimation() - 전체화면 크기로 배치된 이미지 투명도 변경 (40% -> 0%)
+ * : TakeDamage() - 체력 감소
+ * : HitAlphaAnimation() - 전체화면 크기로 배치된 이미지 투명도 변경 (40% -> 0%)
  */

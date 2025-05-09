@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
@@ -24,8 +24,9 @@ public class Tile : MonoBehaviour
 	public void OnColorReset()
 	{
 		// 원래 TileWall의 색상
-		spriteRenderer.color = new Color(0, 0.69f, 0.31f);
+		spriteRenderer.color = new Color(1, 1, 1, 1);
 	}
+
 }
 
 

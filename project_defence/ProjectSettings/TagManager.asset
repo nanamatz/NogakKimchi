@@ -7,6 +7,12 @@ TagManager:
   - Tile
   - Enemy
   - Tower
+  - TileRoad
+  - Tooltip
+  - MasterSlider
+  - BGSoundSlider
+  - SFXSlider
+  - SoundManager
   layers:
   - Default
   - TransparentFX

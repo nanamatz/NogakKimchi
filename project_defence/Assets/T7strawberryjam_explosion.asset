@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7bcf6fcbb6c844d906e040c534dc62, type: 3}
+  m_Name: T7strawberryjam_explosion
+  m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 3318578265759658224, guid: 012c95b593d0a3c4ea50af9ad65ac99d,
+    type: 3}
+  followTowerPrefab: {fileID: 8166587275253779454, guid: db47641d387339845971a0a18c54ece9,
+    type: 3}
+  weapon:
+  - sprite: {fileID: 21300000, guid: c364b4e04d3ac96458efc67e2f2cc762, type: 3}
+    damage: 0
+    slow: 1
+    buff: 0
+    rate: 1.5
+    range: 10
+    cost: 400
+    sell: 320
+    tileType: 0
+    explosionRange: 3
+    projectileSprite: {fileID: 21300000, guid: eecb87038d6326149924a18c68153b8a, type: 3}
+    projectileSprites: []
+    upgradeImage1: {fileID: 21300000, guid: b78a185632ec9ea4e9648b5a3c210d0b, type: 3}
+    upgradeImage2: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+  - sprite: {fileID: 21300000, guid: c364b4e04d3ac96458efc67e2f2cc762, type: 3}
+    damage: 0
+    slow: 1
+    buff: 0
+    rate: 1.2
+    range: 10
+    cost: 160
+    sell: 448
+    tileType: 0
+    explosionRange: 3
+    projectileSprite: {fileID: 21300000, guid: eecb87038d6326149924a18c68153b8a, type: 3}
+    projectileSprites: []
+    upgradeImage1: {fileID: 21300000, guid: 9fd4de77126849246a64fb3e116d4211, type: 3}
+    upgradeImage2: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+  - sprite: {fileID: 21300000, guid: c364b4e04d3ac96458efc67e2f2cc762, type: 3}
+    damage: 0
+    slow: 1
+    buff: 0
+    rate: 1.2
+    range: 10
+    cost: 360
+    sell: 736
+    tileType: 0
+    explosionRange: 4
+    projectileSprite: {fileID: 21300000, guid: eecb87038d6326149924a18c68153b8a, type: 3}
+    projectileSprites: []
+    upgradeImage1: {fileID: 21300000, guid: beb31c02d41b98740ac54f2c613aa6d5, type: 3}
+    upgradeImage2: {fileID: 21300000, guid: aaa077d8e99ffb54ebcfd44d27ef1100, type: 3}
+  - sprite: {fileID: 21300000, guid: beb31c02d41b98740ac54f2c613aa6d5, type: 3}
+    damage: 0
+    slow: 5
+    buff: 0
+    rate: 1.2
+    range: 10
+    cost: 680
+    sell: 1280
+    tileType: 0
+    explosionRange: 4
+    projectileSprite: {fileID: 21300000, guid: 39f05f4515f0c254182ce176fc5bc04b, type: 3}
+    projectileSprites: []
+    upgradeImage1: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+    upgradeImage2: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+  - sprite: {fileID: 21300000, guid: aaa077d8e99ffb54ebcfd44d27ef1100, type: 3}
+    damage: 3
+    slow: 1
+    buff: 0
+    rate: 1.2
+    range: 10
+    cost: 680
+    sell: 1280
+    tileType: 0
+    explosionRange: 4
+    projectileSprite: {fileID: 21300000, guid: 3356231f67cf70540bf4f43cbc6a97d8, type: 3}
+    projectileSprites: []
+    upgradeImage1: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+    upgradeImage2: {fileID: 21300000, guid: 06ece579de5c55a4e9d2f390bcad73b0, type: 3}
+  maxTowerLV: 4
+  isLock: 1
