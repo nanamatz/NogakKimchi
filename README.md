@@ -3,18 +3,21 @@
 > [!NOTE]
 > Development completed
 
-## Information
+## 정보
 - 2학년 2학기 게임소프트웨어개발1 프로젝트
 
-### Developer
-- Team NOGAK-KIMCHI, Department of Game Design and Development, Sangmyung University
+### 제작
+- 상명대학교 게임전공 - 팀 노각김치
 
-### Platform
-- Windows
+### 플랫폼
+- 윈도우
 
-### Genre
-- Tile-based
-- Tower Defense
+### 장르
+- 타일 기반 타워 디펜스
 
-### Engine
-- Unity
+### 엔진
+- 유니티
+
+### 트레일러 영상  
+
+[![Release Video](https://img.youtube.com/vi/29eg6zHw_2I/hqdefault.jpg)](https://youtu.be/29eg6zHw_2I)
